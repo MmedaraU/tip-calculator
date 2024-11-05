@@ -20,50 +20,55 @@
 
 <body>
 
-  <section>
-    <main>
-      <form>
+  <main>
+    <!-- <section> -->
+    <h1>Spli<br>tter</h1>
+    <form>
 
-        <fieldset class="form-input">
-          <div>
-            <label for="bill">Bill</label>
-            <input type="number" inputmode="numeric" name="bill" class="billInput">
-          </div>
-          <div>
-            <label for="tip-percentage">Select Tip %</label>
-            <div class="tip tip-5">5%</div>
-            <div class="tip tip-10">10%</div>
-            <div class="tip tip-15">15%</div>
-            <div class="tip tip-25">25%</div>
-            <div class="tip tip-50">50%</div>
-            <input type="number" name="tipCustom" id="tipCustom" class="tip-custom" placeholder="Custom">
-          </div>
 
-          <div>
-            <label for="number-of-people">Number of People
-              <input type="number" name="numberOfPeople" class="numberOfPeople">
-          </div>
-        </fieldset>
+      <fieldset class="form-input">
+        <div>
+          <label for="bill">Bill</label>
+          <input type="number" inputmode="numeric" name="bill" class="billInput">
+        </div>
+        <div>
+          <label for="tip-percentage">Select Tip %</label>
+          <div class="tip tip-5">5%</div>
+          <div class="tip tip-10">10%</div>
+          <div class="tip tip-15">15%</div>
+          <div class="tip tip-25">25%</div>
+          <div class="tip tip-50">50%</div>
+          <input type="number" name="tipCustom" id="tipCustom" class="tip-custom" placeholder="Custom">
+        </div>
 
-        <fieldset class="form-output">
-          <div class="tip-per-person">
-            <p>Tip Amount / person</p>
-            <p class="amount-output" id="tipPerPerson">4.27</p>
-          </div>
+        <!-- Number of People -->
+        <div>
+          <label for="number-of-people">Number of People</label>
+          <input type="number" name="numberOfPeople" class="numberOfPeople">
+        </div>
+      </fieldset>
 
-          <div class="total-per-person">
-            <p>Total / person</p>
-            <p class="amount-output" id="totalPerPerson">4.27</p>
-          </div>
-        </fieldset>
-        <button type="reset" class="reset">Reset</button>
-      </form>
-      <footer class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
-      </footer>
-    </main>
-  </section>
+      <fieldset class="form-output">
+        <div class="tip-per-person">
+          <p>Tip Amount<br><span>/ person</span></p>
+          <p class="amount-output" id="tipPerPerson">4.27</p>
+        </div>
+
+        <div class="total-per-person">
+          <p>Total<br><span>/ person</span></p>
+          <p class="amount-output" id="totalPerPerson">4.27</p>
+        </div>
+
+        <button type="reset" class="btn reset">Reset</button>
+
+      </fieldset>
+    </form>
+    <!-- </section> -->
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </footer>
+  </main>
 
 
   <script src="js/script.js"></script>

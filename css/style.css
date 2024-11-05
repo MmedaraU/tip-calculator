@@ -1,0 +1,160 @@
+/*=================== Custom Styles ===================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(185, 41%, 84%);
+  font-size: 16px;
+  font-family: "Space Mono", monospace;
+  color: hsl(186, 14%, 43%);
+  font-weight: 700;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*=============== Typography ===============*/
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.72rem;
+  font-size: 1.3rem;
+  color: hsl(186, 14%, 43%);
+}
+
+/*=============== Form ===============*/
+form {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  justify-content: space-between;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  padding: 1.2rem;
+  width: 60%;
+  font-family: inherit;
+}
+form > * {
+  width: 50%;
+  margin: 1rem;
+  border: 0px;
+}
+form div {
+  margin-bottom: 1rem;
+}
+form label, form input, form .btn {
+  display: block;
+  width: 95%;
+  margin-bottom: 1rem;
+}
+form label {
+  font-weight: 700;
+}
+form input {
+  text-align: right;
+  height: 2rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: 0.6rem;
+  background-position: 12px center;
+}
+form input[placeholder] {
+  font-family: inherit;
+  color: hsl(186, 14%, 43%);
+  font-weight: 700;
+}
+form .billInput {
+  background-image: url("../images/icon-dollar.svg");
+}
+form .numberOfPeople {
+  background-image: url("../images/icon-person.svg");
+}
+form .tip, form .tip-custom {
+  margin-right: 0.3rem;
+  padding: 0.3em;
+  display: inline-block;
+  width: 5rem;
+  background-color: hsl(183, 100%, 15%);
+  text-align: center;
+  color: hsl(189, 41%, 97%);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+form .tip-custom {
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+  padding: 0px;
+}
+form .active-tip {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(172, 67%, 45%);
+}
+form .form-output {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 1.5rem;
+  color: hsl(189, 41%, 97%);
+}
+form .form-output span {
+  color: hsl(184, 14%, 56%);
+  font-size: smaller;
+}
+form .form-output .tip-per-person, form .form-output .total-per-person {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+form .amount-output {
+  color: hsl(172, 67%, 45%);
+  font-size: 2rem;
+  font-weight: bold;
+}
+form .btn {
+  height: 2.5rem;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(172, 67%, 45%);
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/*=============== Footer ===============*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
