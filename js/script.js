@@ -6,6 +6,10 @@ const totalPerPerson = document.getElementById('totalPerPerson');
 const tips = document.querySelectorAll('.tip');
 const tipCustom = document.querySelector(".tip-custom");
 const resetBtn = document.querySelector(".reset");
+const error = document.querySelector(".error");
+
+/*=================== Setting Default Styles ===================*/
+// billInput.style.fontFamily = "'Space Mono', monospace";
 
 /*=================== Event Listeners ===================*/
 
@@ -39,6 +43,15 @@ function billInputFun() {
 
 function peopleInputFun() {
   peopleValue = parseFloat(peopleInput.value); //takes string argument, returns first number as floating point number
+
+  if (peopleValue < 1) {
+    error.style.display = "flex";
+    peopleInput.style.border = "thick solid red";
+  } else {
+    error.style.display = "none";
+    peopleInput.style.border = "2px inset rgb(118, 118, 118)";
+  }
+
   calculateTip();
 }
 

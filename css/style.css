@@ -7,7 +7,7 @@
 
 body {
   background-color: hsl(185, 41%, 84%);
-  font-size: 16px;
+  font-size: 100%;
   font-family: "Space Mono", monospace;
   color: hsl(186, 14%, 43%);
   font-weight: 700;
@@ -23,10 +23,17 @@ main {
 
 /*=============== Typography ===============*/
 h1 {
-  text-transform: uppercase;
   letter-spacing: 0.72rem;
-  font-size: 1.3rem;
   color: hsl(186, 14%, 43%);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.billInput, .numberOfPeople {
+  color: hsl(183, 100%, 15%);
+  font-family: inherit;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 /*=============== Form ===============*/
@@ -87,7 +94,7 @@ form .tip, form .tip-custom {
   margin-right: 0.3rem;
   padding: 0.3em;
   display: inline-block;
-  width: 5rem;
+  width: 30%;
   background-color: hsl(183, 100%, 15%);
   text-align: center;
   color: hsl(189, 41%, 97%);
@@ -96,6 +103,9 @@ form .tip, form .tip-custom {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+}
+form .tip {
+  cursor: pointer;
 }
 form .tip-custom {
   background-color: hsl(189, 41%, 97%);
@@ -134,6 +144,10 @@ form .amount-output {
   font-size: 2rem;
   font-weight: bold;
 }
+form .error {
+  color: red;
+  display: none;
+}
 form .btn {
   height: 2.5rem;
   font-family: inherit;
@@ -157,4 +171,49 @@ form .btn {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/*=================== Media Queries ===================*/
+@media screen and (max-width: 1445px) and (min-width: 900px) {
+  form .tip, form .tip-custom {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 1078px) {
+  form .form-output .tip-per-person, form .form-output .total-per-person {
+    display: block;
+  }
+  form .form-output .tip-per-person > *, form .form-output .total-per-person > * {
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 899px) {
+  h1, footer {
+    margin: 1.5rem 0 1.5rem 0;
+  }
+  form {
+    flex-direction: column;
+    align-items: center;
+  }
+  form .form-input, form .form-output {
+    width: 90%;
+  }
+  form .form-output .tip-per-person, form .form-output .total-per-person {
+    display: flex;
+  }
+}
+@media screen and (max-width: 655px) {
+  form .tip, form .tip-custom {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 600px) {
+  form .form-output .tip-per-person, form .form-output .total-per-person {
+    display: block;
+  }
+}
+@media screen and (max-width: 420px) {
+  form .tip, form .tip-custom {
+    width: 97%;
+  }
 }
